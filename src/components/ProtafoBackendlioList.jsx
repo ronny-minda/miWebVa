@@ -127,7 +127,11 @@ const ProtafoBackendlioList = () => {
                   <span className="tec">Tecnologias</span>
                   <div>
                     {dato.tecnologias.map((list) => {
-                      return <span className="lis">- {list}</span>;
+                      return (
+                        <span key={list} className="lis">
+                          - {list}
+                        </span>
+                      );
                     })}
 
                     {/* {console.log(dato.tecnologias)} */}

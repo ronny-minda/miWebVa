@@ -150,7 +150,7 @@ const ConteWeb = ({ blog }) => {
         <p>{blog.descripcion}</p>
         <h3>TECNOLOGIAS</h3>
         {blog.tecnologias.map((dato) => {
-          return <li>{dato}</li>;
+          return <li key={dato}>{dato}</li>;
         })}
 
         <a
