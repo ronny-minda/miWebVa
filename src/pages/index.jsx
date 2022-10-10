@@ -88,8 +88,14 @@ const Conten = styled.div`
 `;
 
 export default function Home() {
+  const head = {
+    titulo: "Ronny Minda V.",
+    description:
+      "¡Hola! Mis conocimientos en en pedidos api rest de lado frontend y desarrollo de api rest de lado backend con node y sus respectivas validaciones administracion de roles.",
+  };
+
   return (
-    <Layout>
+    <Layout head={head}>
       <Conten>
         <aside>
           <div className="rayaA"></div>

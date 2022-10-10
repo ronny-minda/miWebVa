@@ -37,9 +37,14 @@ const Section = styled.section`
 const Portafolio = () => {
   const [estado, setEstado] = useState(false);
 
+  const head = {
+    titulo: "Portafolio Ronny Minda V.",
+    description: "Portafolio del sobre mis conocimientos",
+  };
+
   return (
     <>
-      <Layout>
+      <Layout head={head}>
         <BlogInicio titulo={"PORTAFOLIO"} />
         <Section>
           <span onClick={() => setEstado(false)}>FRONTEND</span>

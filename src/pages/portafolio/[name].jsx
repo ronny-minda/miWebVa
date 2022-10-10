@@ -31,8 +31,13 @@ const Blog = () => {
 
   // console.log(blog.titulo);
 
+  const head = {
+    titulo: front.titulo,
+    description: front.titulo,
+  };
+
   return (
-    <Layout>
+    <Layout head={head}>
       <motion.div
         initial={{ opacity: 0, y: 200 }}
         whileInView={{ opacity: 1, y: 0 }}

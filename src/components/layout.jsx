@@ -129,13 +129,15 @@ const Fondo = styled.div`
   }
 `;
 
-const Layout = ({ children }) => {
+const Layout = ({ children, head }) => {
   // const { loger, loader } = useDatos();
   const [scroll, setScroll] = useState(-100);
   const [position, setPosition] = useState({
     x: 0,
     y: 0,
   });
+
+  // console.log({ head });
 
   useEffect(() => {
     addEventListener("scroll", (event) => {
@@ -145,19 +147,19 @@ const Layout = ({ children }) => {
       setScroll(winScroll * 0.3);
     });
 
-    addEventListener("mousemove", (e) => {
-      // const mause = document.querySelector(".mause")
-      const y = e.pageY - window.top.scrollY;
-      const x = e.pageX;
+    // addEventListener("mousemove", (e) => {
+    //   // const mause = document.querySelector(".mause")
+    //   const y = e.pageY - window.top.scrollY;
+    //   const x = e.pageX;
 
-      // console.log(x);
-      // console.log(y);
+    //   // console.log(x);
+    //   // console.log(y);
 
-      setPosition({
-        x: x - 0,
-        y: y - 0,
-      });
-    });
+    //   setPosition({
+    //     x: x - 0,
+    //     y: y - 0,
+    //   });
+    // });
 
     // setTimeout(() => {
     //   loader();
@@ -169,12 +171,11 @@ const Layout = ({ children }) => {
   return (
     <>
       <Head>
-        <title>Ronny Minda V.</title>
+        <meta charset="UTF-8"></meta>
+        <title>{head.titulo}</title>
+        <meta property="og:title" content={head.titulo}></meta>
         {/* <meta name="viewport" content="initial-scale=1.0, width=device-width" /> */}
-        <meta
-          name="viewport"
-          content="user-scalable=no, width=device-width, initial-scale=1.0"
-        />
+
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <link rel="preconnect" href="https://fonts.googleapis.com"></link>
 
@@ -189,6 +190,32 @@ const Layout = ({ children }) => {
           href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
           rel="stylesheet"
         ></link>
+
+        <meta
+          name="viewport"
+          content="user-scalable=no, width=device-width, initial-scale=1.0"
+        />
+        {/* <!-- title - entre 55 y 65 caracteres --> */}
+
+        {/* <!-- description - no más de 165 caracteres --> */}
+        <meta name="description" content={head.description}></meta>
+
+        {/* <link rel="canonical" href="http://tudominio.com/la-url-canonica"></link> */}
+        <link rel="icon" href="/favicon.png"></link>
+        <link rel="apple-touch-icon" href="/favicon.png"></link>
+        <meta name="theme-color" content="#ff5555"></meta>
+
+        <meta property="og:description" content={head.description}></meta>
+        <meta
+          property="og:image"
+          content="https://www.ronnyminda.ga/_next/image?url=%2FimgPrincipal.png&w=256&q=75"
+        ></meta>
+        <meta
+          property="og:url"
+          content="https://www.ronnyminda.ga/index.html"
+        ></meta>
+        <meta name="twitter:card" content="summary"></meta>
+        <meta name="twitter:site" content="@MichaelMinda7"></meta>
       </Head>
       <GlobalStyle />
 
@@ -260,7 +287,7 @@ const Layout = ({ children }) => {
 
       {/* mira mause */}
 
-      <div
+      {/* <div
         style={{
           height: "10px",
           width: "2px",
@@ -307,7 +334,7 @@ const Layout = ({ children }) => {
           left: position.x - 1,
           boxShadow: " 30px 30px 4px 0px red",
         }}
-      ></div>
+      ></div> */}
 
       <Footer />
       {/* <FondoPrueba /> */}

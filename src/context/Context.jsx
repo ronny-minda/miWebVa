@@ -1618,7 +1618,7 @@ const frontend = [
     descripcion:
       "Tiene la tematica y imformacion de este video juego como jefes y dlc del mismo.",
     gitHub: "https://github.com/ronny-minda/Page_Dark_Souls",
-    disponible: "https://www.ronnyminda.ga/Page_Dark_Souls/",
+    disponible: "https://ronny-minda.github.io/Page_Dark_Souls/",
     detalles: "/portafolio/Darksouls",
     tecnologias: ["REACT", "BOOTSTRAP"],
   },
@@ -1629,7 +1629,7 @@ const frontend = [
     descripcion:
       "La recreacion de un formulario que utiliza formik para la gestion de formulario y usar herrramientas mas sensillas en aplicaciones.",
     gitHub: "https://github.com/ronny-minda/Formulario",
-    disponible: "https://www.ronnyminda.ga/Formulario/",
+    disponible: "https://ronny-minda.github.io/Formulario/",
     detalles: "/portafolio/Formulario",
     tecnologias: ["REACT", "FORMIK"],
   },
@@ -1640,7 +1640,7 @@ const frontend = [
     descripcion:
       "Pagina sobre servicios de bodas, contacto, blog y la persona que brinda estos servicios de bodas(uso de formik).",
     gitHub: "https://github.com/ronny-minda/Pagina_servicio_boda",
-    disponible: "https://www.ronnyminda.ga/Pagina_servicio_boda/",
+    disponible: "https://ronny-minda.github.io/Pagina_servicio_boda/",
     detalles: "/portafolio/Pagina De Bodas",
     tecnologias: ["REACT", "FORMIK"],
   },
@@ -1650,7 +1650,7 @@ const frontend = [
     img: "/portafolio/frontend/pagePortafolio.png",
     descripcion: "Mi anterior pagina web o protafolio.",
     gitHub: "https://github.com/ronny-minda/Anterior_pagina_portafolio/",
-    disponible: "nada",
+    disponible: "https://ronny-minda.github.io/Anterior_pagina_portafolio/",
     detalles: "/portafolio/Anterior Portafolio",
     tecnologias: ["REACT", "SASS"],
   },
@@ -1661,7 +1661,7 @@ const frontend = [
     descripcion:
       "Pagina sobre servicios de nutricion contacto blog y la persona que brinda estos servicios.",
     gitHub: "https://github.com/ronny-minda/Nutricionista",
-    disponible: "https://www.ronnyminda.ga/Nutricionista/",
+    disponible: "https://ronny-minda.github.io/Nutricionista/",
     detalles: "/portafolio/Nutricionista",
     tecnologias: ["HTML", "CSS", "JAVASCRIPT"],
   },
@@ -1672,7 +1672,7 @@ const frontend = [
     descripcion:
       "Tarjeta con Ciertos datos(implementando Node y subido a Heroku).",
     gitHub: "https://github.com/ronny-minda/Tarjeta",
-    disponible: "https://node-express-tarjeta.herokuapp.com/",
+    disponible: "https://heroic-kringle-66861c.netlify.app/",
     detalles: "/portafolio/Tarjeta",
     tecnologias: ["HTML", "CSS", "JAVASCRIPT", "NODE"],
   },
@@ -1683,7 +1683,7 @@ const frontend = [
     descripcion:
       "Mi pagina Web actual o portafolio en la que muestro la payoria de cosas que hago para la Web(uso de styled components).",
     gitHub: "https://github.com/ronny-minda/ronny-minda.github.io",
-    disponible: "https://www.ronnyminda.ga/myweb2/",
+    disponible: "https://ronny-minda.github.io/myweb2/",
     detalles: "/portafolio/Pagina",
     tecnologias: ["react", "bootstrap"],
   },

@@ -29,10 +29,15 @@ const Blog = () => {
     return <div>Cargando....</div>;
   }
 
+  const head = {
+    titulo: blog.titulo,
+    description: blog.titulo,
+  };
+
   // console.log(blog.titulo);
 
   return (
-    <Layout>
+    <Layout head={head}>
       <motion.div
         initial={{ opacity: 0, y: 200 }}
         whileInView={{ opacity: 1, y: 0 }}

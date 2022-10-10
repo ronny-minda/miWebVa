@@ -10,9 +10,13 @@ const Blog = () => {
   // const { halo } = useDatos();
 
   // console.log(halo("maikol"));
+  const head = {
+    titulo: "Blog Ronny Minda V.",
+    description: "Blog pesonal de desarrollo ",
+  };
 
   return (
-    <Layout>
+    <Layout head={head}>
       <BlogInicio titulo={"BLOG"} />
 
       <ListadoBlog />
