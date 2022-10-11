@@ -1,5 +1,5 @@
 import { createContext, useContext } from "react";
-// import React, { useState } from "react";
+import React, { useState } from "react";
 
 const datos = [
   {
@@ -1718,13 +1718,15 @@ export const useDatos = () => {
 };
 
 export const DatosProvider = ({ children }) => {
-  // const [loger, setLoger] = useState(true);
+  const [loger, setLoger] = useState(true);
 
   const halo = (name) => `hola {name}`;
-  // const loader = () => setLoger(false);
+  const loader = () => setLoger(false);
 
   return (
-    <DatosContext.Provider value={{ datos, halo, frontend, backend }}>
+    <DatosContext.Provider
+      value={{ datos, halo, frontend, backend, loger, loader }}
+    >
       {children}
     </DatosContext.Provider>
   );

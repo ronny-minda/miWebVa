@@ -130,7 +130,10 @@ const Fondo = styled.div`
 `;
 
 const Layout = ({ children, head }) => {
-  // const { loger, loader } = useDatos();
+  const { loger, loader } = useDatos();
+
+  console.log(loger);
+
   const [scroll, setScroll] = useState(-100);
   const [position, setPosition] = useState({
     x: 0,
@@ -146,6 +149,10 @@ const Layout = ({ children, head }) => {
       // console.log({ winScroll });
       setScroll(winScroll * 0.3);
     });
+
+    setTimeout(() => {
+      loader();
+    }, 3000);
 
     // addEventListener("mousemove", (e) => {
     //   // const mause = document.querySelector(".mause")
@@ -170,7 +177,6 @@ const Layout = ({ children, head }) => {
 
   return (
     <>
-    
       <Head>
         <meta charset="UTF-8"></meta>
         <title>{head.titulo}</title>
@@ -221,79 +227,80 @@ const Layout = ({ children, head }) => {
       <GlobalStyle />
 
       <Header />
+
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.5 }}
       >
-      <Fondo>
-        {/* <AnimatePresence exitBeforeEnter>
+        <Fondo>
+          {/* <AnimatePresence exitBeforeEnter>
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 1 }}
           > */}
-        {children}
-        {/* </motion.div>
+          {children}
+          {/* </motion.div>
         </AnimatePresence> */}
+          <div
+            className="fondo"
+            style={{
+              top: `-${scroll + position.y * 0.01}px`,
+              left: `-${position.x * 0.01}px`,
+            }}
+          >
+            <div className="fondo1"></div>
+            <div className="fondo2"></div>
+            <div className="fondo3"></div>
+          </div>
+        </Fondo>
+
+        {/* rayas mamalonas 2 */}
         <div
-          className="fondo"
           style={{
-            top: `-${scroll + position.y * 0.01}px`,
-            left: `-${position.x * 0.01}px`,
+            position: "fixed",
+            zIndex: "9999",
+            top: 0,
+            left: "25%",
+            height: "100%",
+            width: "1px",
+            backgroundColor: "#C93939",
+            // boxShadow: " 10px 0px 4px 0px red",
           }}
-        >
-          <div className="fondo1"></div>
-          <div className="fondo2"></div>
-          <div className="fondo3"></div>
-        </div>
-      </Fondo>
+        ></div>
 
-      {/* rayas mamalonas 2 */}
-      <div
-        style={{
-          position: "fixed",
-          zIndex: "9999",
-          top: 0,
-          left: "25%",
-          height: "100%",
-          width: "1px",
-          backgroundColor: "#C93939",
-          // boxShadow: " 10px 0px 4px 0px red",
-        }}
-      ></div>
+        <div
+          style={{
+            position: "fixed",
+            zIndex: "9999",
+            top: 0,
+            left: "28%",
+            height: "100%",
+            width: "1px",
+            backgroundColor: "#C93939",
+            // boxShadow: " 10px 0px 4px 0px red",
+          }}
+        ></div>
 
-      <div
-        style={{
-          position: "fixed",
-          zIndex: "9999",
-          top: 0,
-          left: "28%",
-          height: "100%",
-          width: "1px",
-          backgroundColor: "#C93939",
-          // boxShadow: " 10px 0px 4px 0px red",
-        }}
-      ></div>
+        <div
+          style={{
+            position: "fixed",
+            zIndex: "9999",
+            top: 0,
+            left: "75%",
+            height: "100%",
+            width: "1px",
+            backgroundColor: "#C93939",
+            // boxShadow: " 10px 0px 4px 0px red",
+          }}
+        ></div>
 
-      <div
-        style={{
-          position: "fixed",
-          zIndex: "9999",
-          top: 0,
-          left: "75%",
-          height: "100%",
-          width: "1px",
-          backgroundColor: "#C93939",
-          // boxShadow: " 10px 0px 4px 0px red",
-        }}
-      ></div>
+        {/* mira mause */}
 
-      {/* mira mause */}
-
-      {/* <div
+        {/* <div
         style={{
           height: "10px",
           width: "2px",
@@ -342,11 +349,10 @@ const Layout = ({ children, head }) => {
         }}
       ></div> */}
 
-      <Footer />
-      {/* <FondoPrueba /> */}
-
-      {/* <Loader /> */}
+        <Footer />
+        {/* <FondoPrueba /> */}
       </motion.div>
+      {loger && <Loader />}
     </>
   );
 };

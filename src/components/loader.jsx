@@ -80,7 +80,7 @@ const Loader = ({ time }) => {
         valor1: "horizontal",
         valor2: "vertical",
       });
-    }, 2500);
+    }, 1000);
 
     // setTimeout(() => {
     //   setVisi(false);

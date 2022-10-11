@@ -37,9 +37,7 @@ class MyApp extends App {
     return (
       <DatosProvider>
         <AnimatePresence>
-         
-            <Component {...pageProps} key={router.route} />
-   
+          <Component {...pageProps} key={router.route} />
         </AnimatePresence>
       </DatosProvider>
     );
