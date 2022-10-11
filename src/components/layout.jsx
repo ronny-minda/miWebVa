@@ -170,6 +170,7 @@ const Layout = ({ children, head }) => {
 
   return (
     <>
+    
       <Head>
         <meta charset="UTF-8"></meta>
         <title>{head.titulo}</title>
@@ -220,7 +221,12 @@ const Layout = ({ children, head }) => {
       <GlobalStyle />
 
       <Header />
-
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.5 }}
+      >
       <Fondo>
         {/* <AnimatePresence exitBeforeEnter>
           <motion.div
@@ -340,6 +346,7 @@ const Layout = ({ children, head }) => {
       {/* <FondoPrueba /> */}
 
       {/* <Loader /> */}
+      </motion.div>
     </>
   );
 };
