@@ -154,19 +154,19 @@ const Layout = ({ children, head }) => {
       loader();
     }, 3000);
 
-    // addEventListener("mousemove", (e) => {
-    //   // const mause = document.querySelector(".mause")
-    //   const y = e.pageY - window.top.scrollY;
-    //   const x = e.pageX;
+    addEventListener("mousemove", (e) => {
+      // const mause = document.querySelector(".mause")
+      const y = e.pageY - window.top.scrollY;
+      const x = e.pageX;
 
-    //   // console.log(x);
-    //   // console.log(y);
+      // console.log(x);
+      // console.log(y);
 
-    //   setPosition({
-    //     x: x - 0,
-    //     y: y - 0,
-    //   });
-    // });
+      setPosition({
+        x: x - 0,
+        y: y - 0,
+      });
+    });
 
     // setTimeout(() => {
     //   loader();
