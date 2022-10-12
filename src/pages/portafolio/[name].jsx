@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 import { useDatos } from "../../context/Context";
@@ -13,9 +13,12 @@ const Blog = () => {
   const router = useRouter();
   const { frontend } = useDatos();
 
-  if (!router.isReady) {
-    return <div>Cargando....</div>;
-  }
+  useEffect(() => {
+    if (!router.isReady) {
+      // return <div>Cargando....</div>;
+      router.push("/404");
+    }
+  }, []);
 
   // console.log(router.query.name);
 

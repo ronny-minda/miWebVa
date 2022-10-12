@@ -132,7 +132,7 @@ const Fondo = styled.div`
 const Layout = ({ children, head }) => {
   const { loger, loader } = useDatos();
 
-  console.log(loger);
+  // console.log(loger);
 
   const [scroll, setScroll] = useState(-100);
   const [position, setPosition] = useState({

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 import { useDatos } from "../../context/Context";
@@ -26,8 +26,16 @@ const Blog = () => {
   })[0];
 
   if (!blog) {
+    router.push("/404");
     return <div>Cargando....</div>;
   }
+
+  // useEffect(() => {
+  //   if (!blog) {
+  //     // return <div>Cargando....</div>;
+  //     router.push("/404");
+  //   }
+  // }, []);
 
   const head = {
     titulo: blog.titulo,
