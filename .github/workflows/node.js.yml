@@ -10,9 +10,12 @@ jobs:
   hello:
     runs-on: ubuntu-18.04
     steps:
-      - name: deployment1
-        run: "npm i"
-      - name: deployment2
-        run: "npm run build"
-      - name: deployment3
-        run: "npm run start"
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: npm i
+      - run: npm run build
+      - run: npm run start
