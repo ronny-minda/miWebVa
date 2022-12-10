@@ -280,9 +280,9 @@ const SobreMi = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{
-          delay: 0.3,
+          // delay: 0.3,
           duration: 2,
-          type: "spring",
+          // type: "spring",
           //   stiffness: 150,
         }}
       >
@@ -295,10 +295,11 @@ const SobreMi = () => {
             <div className="conte">
               <Image
                 // className="img"
-                src="/imgPrincipal.png"
-                width={200}
-                height={200}
+                src="/perfilActual.jpeg"
+                width={400}
+                height={500}
                 quality={75}
+                style={{ objectFit: "cover" }}
                 // blurDataURL="/images/path-to-blur-image.jpg"
                 // placeholder="blur"
                 // className={loaded ? "unblur" : ""}
@@ -313,7 +314,7 @@ const SobreMi = () => {
                   <b>Correo: </b>ronny.minda.vera@gmail.com
                 </p>
                 <a
-                  href="/RonnyMindaVeracurriculum.pdf"
+                  href="/curriculumRonny.pdf"
                   className="button botonNext"
                   download
                 >

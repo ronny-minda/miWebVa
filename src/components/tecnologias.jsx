@@ -13,6 +13,7 @@ import GitHub from "../svg/gitHub";
 import Html from "../svg/html";
 import Css from "../svg/css";
 import Next from "../svg/next";
+import Wordpress from "../svg/wordpress";
 
 const Section = styled.section`
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
@@ -176,7 +177,7 @@ const Tecnologias = () => {
               </div>
               <div className="conteIconos">
                 <LiteReact />
-                <h4>React</h4>
+                <h4>ReactJS</h4>
               </div>
               <div className="conteIconos">
                 <Sass />
@@ -184,11 +185,15 @@ const Tecnologias = () => {
               </div>
               <div className="conteIconos">
                 <Node />
-                <h4>Node</h4>
+                <h4>NodeJS</h4>
               </div>
               <div className="conteIconos">
                 <Next />
-                <h4>Next</h4>
+                <h4>NextJS</h4>
+              </div>
+              <div className="conteIconos">
+                <Wordpress />
+                <h4>Wordpress</h4>
               </div>
               <div className="conteIconos">
                 <Git />
