@@ -37,6 +37,7 @@ const Conten = styled.div`
     top: 0;
     left: 0;
     border-right: 1px solid red;
+    box-shadow: 12px 0px 30px 0px rgba(0, 0, 0, 75);
 
     /* background-color: red; */
     /* position: fixed; */

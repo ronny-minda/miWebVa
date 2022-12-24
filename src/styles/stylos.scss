@@ -1,0 +1,107 @@
+
+// $base-color: #C22428;
+
+// * {
+//     box-sizing: border-box;
+//     margin: 0;
+//     padding: 0;
+//     font-family: 'Roboto', sans-serif;
+//     // scroll-behavior: smooth;
+// }
+
+// body {
+//     background-color: #00fc22;
+//     // overflow-y: hidden;
+//     // transform: translate(3px, -15px);
+// }
+
+// body::-webkit-scrollbar {
+//     background: #fff;
+//     // border-radius: 4px;
+//     width: 0;
+// }
+
+// body::-webkit-scrollbar-thumb {
+//     background-color: blue;
+//     // border-radius: 20px;
+//     // border: 3px solid orange;
+//   }
+
+// /* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+
+// body::-webkit-scrollbar:hover {
+//     background: #852323;
+//     box-shadow: 0 0 2px 1px rgba(159, 30, 30, 0.2);
+//     position: relative;
+// }
+
+// /* Cambiamos el fondo cuando esté en active */
+
+// body::-webkit-scrollbar:active {
+//     background-color: #430f0f;
+// }
+
+
+.loader1 {
+    transition: 1s cubic-bezier(0.755, 0.135, 0.65, 0.81);
+  transition-delay: 0.5s;
+  clip-path: polygon(
+    50% 100%,
+    50% 100%,
+    50% 0,
+    100% 0,
+    100% 100%,
+    0 100%,
+    0 0,
+    50% 0
+  );
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 999999;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    path {
+      fill: #ff0000;
+    }
+  }
+}
+
+.loader2 {
+    transition: 1s cubic-bezier(0.755, 0.135, 0.65, 0.81);
+
+    clip-path: polygon(
+      50% 100%,
+      50% 100%,
+      50% 0,
+      100% 0,
+      100% 100%,
+      0 100%,
+      0 0,
+      50% 0
+    );
+    background-color: #252525;
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    svg {
+      path {
+        fill: #ffffff;
+      }
+    }
+}

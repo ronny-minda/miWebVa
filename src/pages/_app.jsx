@@ -1,5 +1,6 @@
 // import { AnimatePresence, motion } from "framer-motion";
 import { DatosProvider } from "../context/Context";
+import "../styles/stylos.scss"
 
 // function MyApp({ Component, pageProps }) {
 //   return (

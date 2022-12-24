@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import LogoPerfil from "../svg/logoPerfil";
 
+
+
 const Carga1 = styled.div`
   transition: 1s cubic-bezier(0.755, 0.135, 0.65, 0.81);
   transition-delay: 0.5s;
@@ -95,13 +97,13 @@ const Loader = ({ time }) => {
 
   return (
     <>
-      <Carga1 className={stado.valor1}>
+      <div className={`loader1 ${stado.valor1}`}>
         <LogoPerfil />
-      </Carga1>
+      </div>
 
-      <Carga2 className={stado.valor2}>
+      <div className={`loader2 ${stado.valor2}`}>
         <LogoPerfil />
-      </Carga2>
+      </div>
     </>
   );
 };
