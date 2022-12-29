@@ -215,7 +215,7 @@ const Layout = ({ children, head }) => {
         <meta property="og:description" content={head.description}></meta>
         <meta
           property="og:image"
-          content="https://www.ronnyminda.ga/_next/image?url=%2FimgPrincipal.png&w=256&q=75"
+          content="/perfilActual.jpeg"
         ></meta>
         <meta
           property="og:url"
