@@ -178,9 +178,10 @@ const Layout = ({ children, head }) => {
   return (
     <>
       <Head>
-        {/* <meta charset="UTF-8"></meta>
+        <meta charset="UTF-8"></meta>
         <title>{head.titulo}</title>
         <meta property="og:title" content={head.titulo}></meta>
+        {/* <meta name="viewport" content="initial-scale=1.0, width=device-width" /> */}
 
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <link rel="preconnect" href="https://fonts.googleapis.com"></link>
@@ -189,7 +190,7 @@ const Layout = ({ children, head }) => {
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
-  
+          // crossorigin
           crossOrigin="true"
         ></link>
         <link
@@ -201,12 +202,12 @@ const Layout = ({ children, head }) => {
           name="viewport"
           content="user-scalable=no, width=device-width, initial-scale=1.0"
         />
- 
+        {/* <!-- title - entre 55 y 65 caracteres --> */}
 
-     
+        {/* <!-- description - no más de 165 caracteres --> */}
         <meta name="description" content={head.description}></meta>
 
-     
+        {/* <link rel="canonical" href="http://tudominio.com/la-url-canonica"></link> */}
         <link rel="icon" href="/favicon.png"></link>
         <link rel="apple-touch-icon" href="/favicon.png"></link>
         <meta name="theme-color" content="#ff5555"></meta>
@@ -214,90 +215,14 @@ const Layout = ({ children, head }) => {
         <meta property="og:description" content={head.description}></meta>
         <meta
           property="og:image"
-          content="/perfilActual.jpeg"
+          content="https://www.ronnyminda.ga/_next/image?url=%2FimgPrincipal.png&w=256&q=75"
         ></meta>
         <meta
           property="og:url"
           content="https://www.ronnyminda.ga/index.html"
         ></meta>
         <meta name="twitter:card" content="summary"></meta>
-        <meta name="twitter:site" content="@MichaelMinda7"></meta> */}
-
-        <meta charset="UTF-8"></meta>
-        <title>Platzi: ‎Cursos Online Profesionales de Tecnología</title>
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1"
-        ></meta>
-        <meta name="referrer" content="no-referrer-when-downgrade"></meta>
-        <meta
-          name="description"
-          content="Aprende desde cero a crear el futuro web con nuestros Cursos Online Profesionales de Tecnología. 🚀¡Cursos de Desarrollo, Diseño, Marketing y Negocios!"
-        ></meta>
-        <meta name="theme-color" content="#15210B"></meta>
-        <meta property="fb:app_id" content="263680607075199"></meta>
-        <meta property="fb:admins" content="1030603473"></meta>
-        <meta
-          property="og:description"
-          content="Aprende desde cero a crear el futuro web con nuestros Cursos Online Profesionales de Tecnología. 🚀¡Cursos de Desarrollo, Diseño, Marketing y Negocios!"
-        ></meta>
-        <meta
-          property="og:title"
-          content="Platzi: ‎Cursos Online Profesionales de Tecnología"
-        ></meta>
-        <meta property="og:type" content="website"></meta>
-        <meta property="og:url" content="https://platzi.com/inicio/"></meta>
-        <meta
-          property="og:image"
-          content="https://static.platzi.com/media/meta_tags/og/OG-platzi-Dic-2019.webp"
-        ></meta>
-        <meta
-          property="og:site_name"
-          content="https://platzi.com/inicio/"
-        ></meta>
-        <meta property="twitter:account_id" content="4503599630205252"></meta>
-        <meta name="twitter:card" content="summary_large_image"></meta>
-        <meta name="twitter:site" content="@Platzi"></meta>
-        <meta
-          name="twitter:title"
-          content="Platzi: ‎Cursos Online Profesionales de Tecnología"
-        ></meta>
-        <meta
-          name="twitter:description"
-          content="Aprende desde cero a crear el futuro web con nuestros Cursos Online Profesionales de Tecnología. 🚀¡Cursos de Desarrollo, Diseño, Marketing y Negocios!"
-        ></meta>
-        <meta name="twitter:creator" content="@Platzi"></meta>
-        <meta
-          name="twitter:image"
-          content="https://static.platzi.com/media/meta_tags/og/OG-platzi-Dic-2019.webp"
-        ></meta>
-        <meta name="twitter:domain" content="https://platzi.com/inicio/"></meta>
-        <meta
-          name="p:domain_verify"
-          content="7b60446823db932528d0528d4cb50e66"
-        ></meta>
-        <link
-          rel="shortcut icon"
-          href="//static.platzi.com/media/favicons/platzi_favicon.png"
-        ></link>
-        <link
-          rel="icon"
-          sizes="192x192"
-          href="//static.platzi.com/media/favicons/platzi_favicon.png"
-        ></link>
-        <link rel="canonical" href="https://platzi.com"></link>
-        <link
-          rel="alternate"
-          hreflang="x-default"
-          href="https://platzi.com"
-        ></link>
-        <link rel="alternate" hreflang="es" href="https://platzi.com"></link>
-        <link rel="alternate" hreflang="pt" href="https://platzi.com.br"></link>
-        <link
-          rel="alternate"
-          hreflang="en"
-          href="https://courses.platzi.com"
-        ></link>
+        <meta name="twitter:site" content="@MichaelMinda7"></meta>
       </Head>
       <GlobalStyle />
 
