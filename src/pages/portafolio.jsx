@@ -40,6 +40,7 @@ const Portafolio = () => {
   const head = {
     titulo: "Portafolio Ronny Minda V.",
     description: "Portafolio del sobre mis conocimientos",
+    link: "https://www.ronnyminda.ga/portafolio",
   };
 
   return (

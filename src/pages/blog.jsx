@@ -12,7 +12,8 @@ const Blog = () => {
   // console.log(halo("maikol"));
   const head = {
     titulo: "Blog Ronny Minda V.",
-    description: "Blog pesonal de desarrollo ",
+    description: "Blog personal de desarrollo ",
+    link: "https://www.ronnyminda.ga/blog",
   };
 
   return (

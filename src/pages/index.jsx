@@ -93,6 +93,7 @@ export default function Home() {
     titulo: "Ronny Minda V.",
     description:
       "¡Hola! Mis conocimientos en en pedidos api rest de lado frontend y desarrollo de api rest de lado backend con node y sus respectivas validaciones administracion de roles.",
+    link: "https://www.ronnyminda.ga/",
   };
 
   return (

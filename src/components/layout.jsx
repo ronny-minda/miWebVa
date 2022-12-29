@@ -2,6 +2,7 @@ import react, { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import styled, { createGlobalStyle } from "styled-components";
 import Head from "next/head";
+import { NextSeo } from "next-seo";
 
 import Header from "./heaber";
 import Footer from "./footer";
@@ -177,11 +178,59 @@ const Layout = ({ children, head }) => {
 
   return (
     <>
+      <NextSeo
+        title={head.titulo}
+        description={head.description}
+        canonical={head.link}
+        openGraph={{
+          url: head.link,
+          title: head.titulo,
+          description: head.description,
+          images: [
+            {
+              url: "https://www.ronnyminda.ga/_next/image?url=%2FperfilActual.jpeg&w=640&q=75",
+              width: 800,
+              height: 600,
+              alt: "Og Image Alt",
+              type: "image/jpeg",
+            },
+            {
+              url: "https://www.ronnyminda.ga/_next/image?url=%2FperfilActual.jpeg&w=640&q=75",
+              width: 900,
+              height: 800,
+              alt: "Og Image Alt Second",
+              type: "image/jpeg",
+            },
+            {
+              url: "https://www.ronnyminda.ga/_next/image?url=%2FperfilActual.jpeg&w=640&q=75",
+            },
+            {
+              url: "https://www.ronnyminda.ga/_next/image?url=%2FperfilActual.jpeg&w=640&q=75",
+            },
+          ],
+          siteName: head.titulo,
+        }}
+        twitter={{
+          handle: "@MichaelMinda7",
+          site: "@site",
+          cardType: "summary_large_image",
+        }}
+        robotsProps={{
+          nosnippet: true,
+          notranslate: true,
+          noimageindex: true,
+          noarchive: true,
+          maxSnippet: -1,
+          maxImagePreview: "none",
+          maxVideoPreview: -1,
+        }}
+      />
+
       <Head>
-        <meta charset="UTF-8"></meta>
+        {/* <meta charset="UTF-8"></meta>
         <title>{head.titulo}</title>
         <meta property="og:title" content={head.titulo}></meta>
-        {/* <meta name="viewport" content="initial-scale=1.0, width=device-width" /> */}
+         */}
 
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <link rel="preconnect" href="https://fonts.googleapis.com"></link>
@@ -190,7 +239,6 @@ const Layout = ({ children, head }) => {
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
-          // crossorigin
           crossOrigin="true"
         ></link>
         <link
@@ -202,17 +250,14 @@ const Layout = ({ children, head }) => {
           name="viewport"
           content="user-scalable=no, width=device-width, initial-scale=1.0"
         />
-        {/* <!-- title - entre 55 y 65 caracteres --> */}
 
-        {/* <!-- description - no más de 165 caracteres --> */}
-        <meta name="description" content={head.description}></meta>
+        {/* <meta name="description" content={head.description}></meta> */}
 
-        {/* <link rel="canonical" href="http://tudominio.com/la-url-canonica"></link> */}
         <link rel="icon" href="/favicon.png"></link>
         <link rel="apple-touch-icon" href="/favicon.png"></link>
         <meta name="theme-color" content="#ff5555"></meta>
 
-        <meta property="og:description" content={head.description}></meta>
+        {/* <meta property="og:description" content={head.description}></meta>
         <meta
           property="og:image"
           content="https://www.ronnyminda.ga/_next/image?url=%2FimgPrincipal.png&w=256&q=75"
@@ -222,7 +267,7 @@ const Layout = ({ children, head }) => {
           content="https://www.ronnyminda.ga/index.html"
         ></meta>
         <meta name="twitter:card" content="summary"></meta>
-        <meta name="twitter:site" content="@MichaelMinda7"></meta>
+        <meta name="twitter:site" content="@MichaelMinda7"></meta> */}
       </Head>
       <GlobalStyle />
 

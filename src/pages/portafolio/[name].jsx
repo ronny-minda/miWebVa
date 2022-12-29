@@ -37,6 +37,7 @@ const Blog = () => {
   const head = {
     titulo: front.titulo,
     description: front.titulo,
+    link: `https://www.ronnyminda.ga/${front.titulo}`,
   };
 
   return (

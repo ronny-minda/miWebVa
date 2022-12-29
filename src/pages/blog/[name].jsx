@@ -40,6 +40,7 @@ const Blog = () => {
   const head = {
     titulo: blog.titulo,
     description: blog.titulo,
+    link: `https://www.ronnyminda.ga/${blog.titulo}`,
   };
 
   // console.log(blog.titulo);

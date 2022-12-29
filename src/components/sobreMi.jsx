@@ -82,6 +82,13 @@ const Section = styled.section`
         flex-direction: column;
       }
 
+      img {
+        max-width: 350px;
+        max-height: 450px;
+        margin: 20px;
+        object-fit: contain;
+      }
+
       .palabras {
         p {
           padding: 10px 0 10px 40px;
@@ -293,7 +300,7 @@ const SobreMi = () => {
             </div>
 
             <div className="conte">
-              <Image
+              {/* <Image
                 // className="img"
                 src="/perfilActual.jpeg"
                 width={400}
@@ -303,7 +310,9 @@ const SobreMi = () => {
                 // blurDataURL="/images/path-to-blur-image.jpg"
                 // placeholder="blur"
                 // className={loaded ? "unblur" : ""}
-              />
+              /> */}
+
+              <img src="/perfilActual.jpeg" alt="Foto de perfil" />
               <div className="palabras">
                 <p style={{ marginTop: "20px" }}>
                   ¡Hola! Mis conocimientos en en pedidos api rest de lado
