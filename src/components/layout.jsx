@@ -251,6 +251,11 @@ const Layout = ({ children, head }) => {
           content="user-scalable=no, width=device-width, initial-scale=1.0"
         />
 
+        <meta
+          name="google-site-verification"
+          content="VfzAKHwjf9TtB4QzlFHlntf-XJMI77x-l4UEF4uBi2s"
+        />
+
         {/* <meta name="description" content={head.description}></meta> */}
 
         <link rel="icon" href="/favicon.png"></link>
