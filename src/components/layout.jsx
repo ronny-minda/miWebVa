@@ -246,6 +246,8 @@ const Layout = ({ children, head }) => {
           rel="stylesheet"
         ></link>
 
+        <meta name="robots" content="all" />
+
         <meta
           name="viewport"
           content="user-scalable=no, width=device-width, initial-scale=1.0"
