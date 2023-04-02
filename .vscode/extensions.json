@@ -1,0 +1,27 @@
+{
+    "recommendations": [
+        "usernamehw.errorlens",
+        "naumovs.color-highlight",
+        "glenn2223.live-sass",
+        "ritwickdey.liveserver",
+        "pkief.material-icon-theme",
+        "christian-kohler.path-intellisense",
+        "esbenp.prettier-vscode",
+        "syler.sass-indented",
+        "ms-ceintl.vscode-language-pack-es",
+        "svelte.svelte-vscode",
+        "henoc.svgeditor",
+        "styled-components.vscode-styled-components",
+        "codevars.platzi-theme-for-vs-code",
+        "zhuangtongfa.material-theme"
+    ]
+} 
+// {
+// 	"recommendations": [
+// 		"huuums.vscode-fast-folder-structure",
+// 		"svelte.svelte-vscode",
+// 		"prisma.prisma",
+// 		"johnpapa.vscode-peacock",
+// 		"GraphQL.vscode-graphql"
+// 	]
+// }
